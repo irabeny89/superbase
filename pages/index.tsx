@@ -20,55 +20,10 @@ export default function Home(): JSX.Element {
 
       <main
         style={{
-          backgroundColor: '#123',
+          backgroundColor: '#113',
         }}
       >
         <div className="container py-5 text-white">
-          <Card
-            style={{
-              maxWidth: 'fit-content',
-              margin: '3.5rem auto',
-              color: 'black',
-            }}
-          >
-            <Card.Header>
-              <h2>
-                <MdReport size="35" /> Tokenomics
-              </h2>
-            </Card.Header>
-            <Card.Body>
-              <p>
-                Total Supply &rarr; <Badge variant="success">6.2m</Badge>{' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-              <p>
-                Private Sale &rarr; <Badge variant="success">657k</Badge> (33k){' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-              <p>
-                Presale &rarr; <Badge variant="success">2.6m</Badge>{' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-              <p>
-                Liquidity &rarr; <Badge variant="success">2.3m</Badge>{' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-              <p>
-                Marketing &rarr; <Badge variant="success">360k</Badge>{' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-              <p>
-                Team &rarr; <Badge variant="success">327k</Badge>{' '}
-                <GiToken size="25" color="gold" />
-              </p>
-              <hr />
-            </Card.Body>
-          </Card>
           <h2>Introducing Super Base</h2>
           <p>
             <b>Super Base</b> combines the Rebasing concept, Auto Liquidity
@@ -87,7 +42,17 @@ export default function Home(): JSX.Element {
               2.5% of $SBASE and deposited back into the UNISWAP liquidity pool.
             </li>
           </ol>
-          <p></p>
+          <div className="my-4">
+            <h3 className="text-center my-5">UNISWAP 10% Fee Breakdown</h3>
+            <div
+              style={{
+                width: 330,
+                margin: '0 auto',
+              }}
+            >
+              <Image src="/breakdown@2x.png" width="330" height="330" />
+            </div>
+          </div>
           <br />
           <h2>What makes Super Base special:</h2>
           <ul>
@@ -103,6 +68,61 @@ export default function Home(): JSX.Element {
             </li>
             <li>No negative rebase.</li>
           </ul>
+          <Card
+            style={{
+              maxWidth: 'fit-content',
+              margin: '3.5rem auto',
+              color: 'black',
+            }}
+          >
+            <Card.Header>
+              <h2>
+                <MdReport size="35" /> Tokenomics
+              </h2>
+            </Card.Header>
+            <Card.Body>
+              <div className="d-flex">
+                <div className="justify-content-center">
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Total Supply <Badge variant="success">6.2m</Badge>{' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Private Sale <Badge variant="success">657k</Badge> (33k){' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                </div>
+                <div className="justify-content-center">
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Pre Sale <Badge variant="success">2.6m</Badge>{' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Liquidity <Badge variant="success">2.3m</Badge>{' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                </div>
+                <div className="justify-content-center">
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Marketing <Badge variant="success">360k</Badge>{' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                  <p className="bg-info badge-pill p-1 text-center">
+                    Team <Badge variant="success">327k</Badge>{' '}
+                    <GiToken size="25" color="gold" />
+                  </p>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+          <div
+            style={{
+              width: 330,
+              margin: '0 auto',
+            }}
+          >
+            <Image src="/super-base-chart.png" width="330" height="330" />
+          </div>
         </div>
       </main>
 
