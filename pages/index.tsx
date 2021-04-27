@@ -139,27 +139,27 @@ export default function Home(): JSX.Element {
                   }}
                 >
                   <p className="bg-info badge-pill p-1 text-center">
-                    Total Supply <Badge variant="success">6,200,000</Badge>{' '}
+                    Total Supply <Badge variant="success">6,700,000</Badge>{' '}
                     <GiToken size="25" color="gold" />
                   </p>
                   <p className="bg-info badge-pill p-1 text-center">
-                    Private Sale <Badge variant="success">657,140</Badge>{' '}
-                    (32,857) <GiToken size="25" color="gold" />
+                    Private Sale <Badge variant="success">468,750</Badge>{' '}
+                    (31,250) <GiToken size="25" color="gold" />
                   </p>
                   <p className="bg-info badge-pill p-1 text-center">
-                    Pre Sale <Badge variant="success">2,555,600</Badge>{' '}
+                    Pre Sale <Badge variant="success">2,638,910</Badge> (27,778)
                     <GiToken size="25" color="gold" />
                   </p>
                   <p className="bg-info badge-pill p-1 text-center">
-                    Liquidity <Badge variant="success">2,300,000</Badge>{' '}
+                    Liquidity <Badge variant="success">2,750,000</Badge>{' '}
                     <GiToken size="25" color="gold" />
                   </p>
                   <p className="bg-info badge-pill p-1 text-center">
-                    Marketing <Badge variant="success">360,000</Badge>{' '}
+                    Marketing <Badge variant="success">486,000</Badge>{' '}
                     <GiToken size="25" color="gold" />
                   </p>
                   <p className="bg-info badge-pill p-1 text-center">
-                    Team <Badge variant="success">327,260</Badge>{' '}
+                    Team <Badge variant="success">356,340</Badge>{' '}
                     <GiToken size="25" color="gold" />
                   </p>
                 </div>
