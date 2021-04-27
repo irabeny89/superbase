@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Card, Badge } from 'react-bootstrap';
 import { GiToken } from 'react-icons/gi';
 import { MdReport } from 'react-icons/md';
+import { FaTelegram, FaTwitter, FaMedium } from 'react-icons/fa';
 
 export default function Home(): JSX.Element {
   return (
@@ -12,7 +13,7 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="bg-primary text-white p-1">
+      <header className="bg-primary text-white p-1 fixed-top">
         <h1 className="font-italic">
           <Image
             src="/favicon-32x32.png"
@@ -22,6 +23,23 @@ export default function Home(): JSX.Element {
           />{' '}
           Super Base
         </h1>
+        <div className="d-flex justify-content-around">
+          <div className="bg-white rounded px-1">
+            <a href="https://medium.com/@superrbase">
+              <FaMedium size="25" />
+            </a>
+          </div>
+          <div className="bg-white rounded px-1">
+            <a href="https://t.me/superbasemain">
+              <FaTelegram size="25" />
+            </a>
+          </div>
+          <div className="bg-white rounded px-1">
+            <a href="https://twitter.com/SuperrBase">
+              <FaTwitter size="25" />
+            </a>
+          </div>
+        </div>
       </header>
 
       <main
@@ -30,6 +48,7 @@ export default function Home(): JSX.Element {
           backgroundImage: "url('/sbcryptograph.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          paddingTop: '2rem',
         }}
       >
         <div className="container py-5 text-white">
@@ -177,7 +196,26 @@ export default function Home(): JSX.Element {
         </div>
       </main>
 
-      <footer className="bg-secondary-50">Superbase&copy;2021</footer>
+      <footer className="bg-secondary-50">
+        <div className="d-flex justify-content-around">
+          <div>Superbase&copy;2021</div>
+          <div className="bg-white rounded px-1">
+            <a href="https://medium.com/@superrbase">
+              <FaMedium size="25" />
+            </a>
+          </div>
+          <div className="bg-white rounded px-1">
+            <a href="https://t.me/superbasemain">
+              <FaTelegram size="25" />
+            </a>
+          </div>
+          <div className="bg-white rounded px-1">
+            <a href="https://twitter.com/SuperrBase">
+              <FaTwitter size="25" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
