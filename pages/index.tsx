@@ -198,7 +198,7 @@ export default function Home(): JSX.Element {
 
       <footer className="bg-secondary-50">
         <div className="d-flex justify-content-around">
-          <div>Superbase&copy;2021</div>
+          <div>SuperBase&copy;2021</div>
           <div className="bg-white rounded px-1">
             <a href="https://medium.com/@superrbase">
               <FaMedium size="25" />
