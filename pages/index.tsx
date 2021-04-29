@@ -138,17 +138,11 @@ export default function Home(): JSX.Element {
               />{' '}
               uniswap 10% Fee Breakdown
             </h2>
-            <div
-              style={{
-                width: 300,
-                margin: '0 auto',
-              }}
-            >
+            <div className="text-center">
               <Image
                 src="/uniswap-fee.png"
-                width="320"
-                height="320"
-                sizes="100"
+                width="350"
+                height="350"
                 alt="chart"
               />
             </div>
@@ -262,17 +256,11 @@ export default function Home(): JSX.Element {
             </Card>
             <div
               style={{
-                width: 300,
-                margin: '6rem 2rem 5rem 0',
+                width: 400,
+                margin: '7rem auto',
               }}
             >
-              <Image
-                src="/sbchart.png"
-                width="400"
-                height="320"
-                sizes="100"
-                alt="chart"
-              />
+              <Image src="/sbchart.png" width="420" height="350" alt="chart" />
             </div>
           </div>
         </div>
