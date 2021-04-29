@@ -59,8 +59,8 @@ export default function Home(): JSX.Element {
         <div className="container-fluid py-5 text-white">
           <Image
             src="/sb-logo.jpg"
-            width="300"
-            height="150"
+            width="200"
+            height="100"
             sizes="100"
             alt="super base"
           />
