@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
           <div>
             <i className="h3">SUPER BASE</i>
           </div>
-          <div>
+          <div style={{ cursor: 'pointer' }}>
             <GiButtonFinger color="gold" size="55" onClick={handleShow} />
           </div>
         </div>
